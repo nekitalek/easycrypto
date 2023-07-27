@@ -1,0 +1,50 @@
+site_name: easycrypto
+repo_url: https://github.com/nekitalek/easycrypto
+docs_dir: '../docs/ru'                           # Where to find the English markdown files
+site_dir: '../generated/ru'                      # Where to put the English HTML files
+
+
+theme:
+  name: material
+  custom_dir: '../../overrides/'                  # This is where the customization of the theme lives
+  logo: assets/images/logo.svg                    # The logo is shared by all languages
+  favicon: assets/images/favicon.ico              # The favicon is shared by all languages
+  language: ru                                    # The build's language 
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Russian
+      link: /ru/
+      lang: ru
+
+plugins:
+  - search:                                         
+      lang: ru
+
+nav:
+- Welcome: index.md
+  

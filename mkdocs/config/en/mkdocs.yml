@@ -1,9 +1,15 @@
 site_name: easycrypto
 repo_url: https://github.com/nekitalek/easycrypto
+docs_dir: '../docs/en'                           # Where to find the English markdown files
+site_dir: '../generated/en'                      # Where to put the English HTML files
+
 
 theme:
   name: material
-  language: ru 
+  custom_dir: '../../overrides/'                  # This is where the customization of the theme lives
+  logo: assets/images/logo.svg                    # The logo is shared by all languages
+  favicon: assets/images/favicon.ico              # The favicon is shared by all languages
+  language: en                                    # The build's language 
   palette: 
     # Palette toggle for light mode
     - scheme: default
@@ -35,4 +41,10 @@ extra:
       link: /ru/
       lang: ru
 
+plugins:
+  - search:                                         
+      lang: en
+
+nav:
+- Welcome: index.md
   
