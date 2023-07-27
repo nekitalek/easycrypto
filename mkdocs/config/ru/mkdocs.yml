@@ -1,7 +1,7 @@
 site_name: easycrypto
 repo_url: https://github.com/nekitalek/easycrypto
-docs_dir: '../docs/ru'                           # Where to find the English markdown files
-site_dir: '../generated/ru'                      # Where to put the English HTML files
+docs_dir: '../../docs/ru'                           # Where to find the English markdown files
+site_dir: '../../generated/ru'                      # Where to put the English HTML files
 
 
 theme:
@@ -46,5 +46,10 @@ plugins:
       lang: ru
 
 nav:
-- Welcome: index.md
-  
+  - Главная: 'index.md'
+  - 'Криптографические примитивы': 'primitives.md'
+  - 'Симметричная криптография': 'symmetric.md'
+  - 'Ассиметричная криптография': 'asymmetric.md'
+  - 'Криптографические хеш-функции': 'hash-functions.md'
+  - 'Квантовая криптография': 'quantum.md'
+  - 'Пост-квантовая криптография': 'post-quantum.md'
